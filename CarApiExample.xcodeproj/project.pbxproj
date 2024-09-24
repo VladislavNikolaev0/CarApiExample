@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C1ACF03D2CA32D4E001AB219 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ACF03C2CA32D4E001AB219 /* AppDelegate.swift */; };
+		C1ACF03F2CA32D4E001AB219 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ACF03E2CA32D4E001AB219 /* SceneDelegate.swift */; };
+		C1ACF0412CA32D4E001AB219 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ACF0402CA32D4E001AB219 /* ViewController.swift */; };
+		C1ACF0462CA32D53001AB219 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1ACF0452CA32D53001AB219 /* Assets.xcassets */; };
+		C1ACF0492CA32D53001AB219 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1ACF0472CA32D53001AB219 /* LaunchScreen.storyboard */; };
+		C1ACF0542CA32D53001AB219 /* CarApiExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ACF0532CA32D53001AB219 /* CarApiExampleTests.swift */; };
+		C1ACF05E2CA32D53001AB219 /* CarApiExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ACF05D2CA32D53001AB219 /* CarApiExampleUITests.swift */; };
+		C1ACF0602CA32D53001AB219 /* CarApiExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ACF05F2CA32D53001AB219 /* CarApiExampleUITestsLaunchTests.swift */; };
+		C1ACF06D2CA32E74001AB219 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ACF06C2CA32E74001AB219 /* TabBarController.swift */; };
+		C1ACF06F2CA33044001AB219 /* HomeConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ACF06E2CA33044001AB219 /* HomeConroller.swift */; };
+		C1ACF0712CA33064001AB219 /* FavoriteConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ACF0702CA33064001AB219 /* FavoriteConroller.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C1ACF0502CA32D53001AB219 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1ACF0312CA32D4E001AB219 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1ACF0382CA32D4E001AB219;
+			remoteInfo = CarApiExample;
+		};
+		C1ACF05A2CA32D53001AB219 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1ACF0312CA32D4E001AB219 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1ACF0382CA32D4E001AB219;
+			remoteInfo = CarApiExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C1ACF0392CA32D4E001AB219 /* CarApiExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarApiExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1ACF03C2CA32D4E001AB219 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C1ACF03E2CA32D4E001AB219 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C1ACF0402CA32D4E001AB219 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C1ACF0452CA32D53001AB219 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1ACF0482CA32D53001AB219 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C1ACF04A2CA32D53001AB219 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1ACF04F2CA32D53001AB219 /* CarApiExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarApiExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1ACF0532CA32D53001AB219 /* CarApiExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarApiExampleTests.swift; sourceTree = "<group>"; };
+		C1ACF0592CA32D53001AB219 /* CarApiExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarApiExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1ACF05D2CA32D53001AB219 /* CarApiExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarApiExampleUITests.swift; sourceTree = "<group>"; };
+		C1ACF05F2CA32D53001AB219 /* CarApiExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarApiExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C1ACF06C2CA32E74001AB219 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		C1ACF06E2CA33044001AB219 /* HomeConroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeConroller.swift; sourceTree = "<group>"; };
+		C1ACF0702CA33064001AB219 /* FavoriteConroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteConroller.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1ACF0362CA32D4E001AB219 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1ACF04C2CA32D53001AB219 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1ACF0562CA32D53001AB219 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C1ACF0302CA32D4E001AB219 = {
+			isa = PBXGroup;
+			children = (
+				C1ACF03B2CA32D4E001AB219 /* CarApiExample */,
+				C1ACF0522CA32D53001AB219 /* CarApiExampleTests */,
+				C1ACF05C2CA32D53001AB219 /* CarApiExampleUITests */,
+				C1ACF03A2CA32D4E001AB219 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C1ACF03A2CA32D4E001AB219 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1ACF0392CA32D4E001AB219 /* CarApiExample.app */,
+				C1ACF04F2CA32D53001AB219 /* CarApiExampleTests.xctest */,
+				C1ACF0592CA32D53001AB219 /* CarApiExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1ACF03B2CA32D4E001AB219 /* CarApiExample */ = {
+			isa = PBXGroup;
+			children = (
+				C1ACF03C2CA32D4E001AB219 /* AppDelegate.swift */,
+				C1ACF03E2CA32D4E001AB219 /* SceneDelegate.swift */,
+				C1ACF0402CA32D4E001AB219 /* ViewController.swift */,
+				C1ACF06C2CA32E74001AB219 /* TabBarController.swift */,
+				C1ACF06E2CA33044001AB219 /* HomeConroller.swift */,
+				C1ACF0702CA33064001AB219 /* FavoriteConroller.swift */,
+				C1ACF0452CA32D53001AB219 /* Assets.xcassets */,
+				C1ACF0472CA32D53001AB219 /* LaunchScreen.storyboard */,
+				C1ACF04A2CA32D53001AB219 /* Info.plist */,
+			);
+			path = CarApiExample;
+			sourceTree = "<group>";
+		};
+		C1ACF0522CA32D53001AB219 /* CarApiExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				C1ACF0532CA32D53001AB219 /* CarApiExampleTests.swift */,
+			);
+			path = CarApiExampleTests;
+			sourceTree = "<group>";
+		};
+		C1ACF05C2CA32D53001AB219 /* CarApiExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C1ACF05D2CA32D53001AB219 /* CarApiExampleUITests.swift */,
+				C1ACF05F2CA32D53001AB219 /* CarApiExampleUITestsLaunchTests.swift */,
+			);
+			path = CarApiExampleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1ACF0382CA32D4E001AB219 /* CarApiExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1ACF0632CA32D53001AB219 /* Build configuration list for PBXNativeTarget "CarApiExample" */;
+			buildPhases = (
+				C1ACF0352CA32D4E001AB219 /* Sources */,
+				C1ACF0362CA32D4E001AB219 /* Frameworks */,
+				C1ACF0372CA32D4E001AB219 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarApiExample;
+			productName = CarApiExample;
+			productReference = C1ACF0392CA32D4E001AB219 /* CarApiExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C1ACF04E2CA32D53001AB219 /* CarApiExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1ACF0662CA32D53001AB219 /* Build configuration list for PBXNativeTarget "CarApiExampleTests" */;
+			buildPhases = (
+				C1ACF04B2CA32D53001AB219 /* Sources */,
+				C1ACF04C2CA32D53001AB219 /* Frameworks */,
+				C1ACF04D2CA32D53001AB219 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1ACF0512CA32D53001AB219 /* PBXTargetDependency */,
+			);
+			name = CarApiExampleTests;
+			productName = CarApiExampleTests;
+			productReference = C1ACF04F2CA32D53001AB219 /* CarApiExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C1ACF0582CA32D53001AB219 /* CarApiExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1ACF0692CA32D53001AB219 /* Build configuration list for PBXNativeTarget "CarApiExampleUITests" */;
+			buildPhases = (
+				C1ACF0552CA32D53001AB219 /* Sources */,
+				C1ACF0562CA32D53001AB219 /* Frameworks */,
+				C1ACF0572CA32D53001AB219 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1ACF05B2CA32D53001AB219 /* PBXTargetDependency */,
+			);
+			name = CarApiExampleUITests;
+			productName = CarApiExampleUITests;
+			productReference = C1ACF0592CA32D53001AB219 /* CarApiExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1ACF0312CA32D4E001AB219 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					C1ACF0382CA32D4E001AB219 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					C1ACF04E2CA32D53001AB219 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = C1ACF0382CA32D4E001AB219;
+					};
+					C1ACF0582CA32D53001AB219 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = C1ACF0382CA32D4E001AB219;
+					};
+				};
+			};
+			buildConfigurationList = C1ACF0342CA32D4E001AB219 /* Build configuration list for PBXProject "CarApiExample" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C1ACF0302CA32D4E001AB219;
+			productRefGroup = C1ACF03A2CA32D4E001AB219 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1ACF0382CA32D4E001AB219 /* CarApiExample */,
+				C1ACF04E2CA32D53001AB219 /* CarApiExampleTests */,
+				C1ACF0582CA32D53001AB219 /* CarApiExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C1ACF0372CA32D4E001AB219 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1ACF0492CA32D53001AB219 /* LaunchScreen.storyboard in Resources */,
+				C1ACF0462CA32D53001AB219 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1ACF04D2CA32D53001AB219 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1ACF0572CA32D53001AB219 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1ACF0352CA32D4E001AB219 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1ACF0412CA32D4E001AB219 /* ViewController.swift in Sources */,
+				C1ACF06D2CA32E74001AB219 /* TabBarController.swift in Sources */,
+				C1ACF0712CA33064001AB219 /* FavoriteConroller.swift in Sources */,
+				C1ACF03D2CA32D4E001AB219 /* AppDelegate.swift in Sources */,
+				C1ACF06F2CA33044001AB219 /* HomeConroller.swift in Sources */,
+				C1ACF03F2CA32D4E001AB219 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1ACF04B2CA32D53001AB219 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1ACF0542CA32D53001AB219 /* CarApiExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1ACF0552CA32D53001AB219 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1ACF05E2CA32D53001AB219 /* CarApiExampleUITests.swift in Sources */,
+				C1ACF0602CA32D53001AB219 /* CarApiExampleUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C1ACF0512CA32D53001AB219 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1ACF0382CA32D4E001AB219 /* CarApiExample */;
+			targetProxy = C1ACF0502CA32D53001AB219 /* PBXContainerItemProxy */;
+		};
+		C1ACF05B2CA32D53001AB219 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1ACF0382CA32D4E001AB219 /* CarApiExample */;
+			targetProxy = C1ACF05A2CA32D53001AB219 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C1ACF0472CA32D53001AB219 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1ACF0482CA32D53001AB219 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C1ACF0612CA32D53001AB219 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C1ACF0622CA32D53001AB219 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1ACF0642CA32D53001AB219 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WKFY495324;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CarApiExample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zxc.CarApiExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C1ACF0652CA32D53001AB219 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WKFY495324;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CarApiExample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zxc.CarApiExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C1ACF0672CA32D53001AB219 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WKFY495324;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zxc.CarApiExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarApiExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CarApiExample";
+			};
+			name = Debug;
+		};
+		C1ACF0682CA32D53001AB219 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WKFY495324;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zxc.CarApiExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarApiExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CarApiExample";
+			};
+			name = Release;
+		};
+		C1ACF06A2CA32D53001AB219 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WKFY495324;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zxc.CarApiExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CarApiExample;
+			};
+			name = Debug;
+		};
+		C1ACF06B2CA32D53001AB219 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WKFY495324;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zxc.CarApiExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CarApiExample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1ACF0342CA32D4E001AB219 /* Build configuration list for PBXProject "CarApiExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1ACF0612CA32D53001AB219 /* Debug */,
+				C1ACF0622CA32D53001AB219 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1ACF0632CA32D53001AB219 /* Build configuration list for PBXNativeTarget "CarApiExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1ACF0642CA32D53001AB219 /* Debug */,
+				C1ACF0652CA32D53001AB219 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1ACF0662CA32D53001AB219 /* Build configuration list for PBXNativeTarget "CarApiExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1ACF0672CA32D53001AB219 /* Debug */,
+				C1ACF0682CA32D53001AB219 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1ACF0692CA32D53001AB219 /* Build configuration list for PBXNativeTarget "CarApiExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1ACF06A2CA32D53001AB219 /* Debug */,
+				C1ACF06B2CA32D53001AB219 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C1ACF0312CA32D4E001AB219 /* Project object */;
+}
