@@ -9,9 +9,20 @@ import UIKit
 
 final class HomeConroller: UIViewController {
     
+    var cars: [Cars] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.view.backgroundColor = .red
+        
+        NetworkManager.shared.getCars(page: 1) { (items, error) in
+            guard let cars = items else {
+                print(error!)
+                return
+            }
+            print(cars.count)
+            print(cars)
+        }
     }
 }
