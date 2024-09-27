@@ -10,22 +10,18 @@ import UIKit
 final class NetworkManager {
     
     static let shared = NetworkManager()
-    let baseUrl: String =  "https://api.api-ninjas.com/v1/carmakes" //"https://api.api-ninjas.com/v1/cars"
+    let baseUrl: String =  "https://freetestapi.com/api/v1/cars"
     
     private init() {}
     
     func getCars(page: Int, complition: @escaping ([Cars]?, String?) -> Void) {
-        let endpoint = baseUrl //+ "?per_page=100&page=\(page)"
-        
-        guard let url = URL(string: endpoint) else {
+
+        guard let url = URL(string: baseUrl) else {
             complition(nil, "Eror in url")
             return
         }
         
-        var request = URLRequest(url: url)
-        request.setValue(Keys.myApiKey, forHTTPHeaderField: "X-Api-Key")
-        
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
             
             if let _ = error {
                 complition(nil, "Error in start url session")
@@ -56,7 +52,6 @@ final class NetworkManager {
             
             do {
                 let decoder = JSONDecoder()
-                //decoder.keyDecodingStrategy = .convertFromSnakeCase
                 print(String(data: data, encoding: .utf8) ?? "No data")
                 let cars = try decoder.decode([Cars].self, from: data)
                 complition(cars, nil)
