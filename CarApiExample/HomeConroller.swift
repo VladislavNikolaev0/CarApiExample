@@ -18,7 +18,7 @@ final class HomeConroller: UIViewController {
         
         NetworkManager.shared.getCars(page: 1) { (items, error) in
             guard let cars = items else {
-                print(error!)
+                print(error!.rawValue)
                 return
             }
             print(cars.count)

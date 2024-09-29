@@ -20,7 +20,7 @@
 		C1ACF0712CA33064001AB219 /* FavoriteConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ACF0702CA33064001AB219 /* FavoriteConroller.swift */; };
 		C1ACF0B92CA5D910001AB219 /* Cars.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ACF0B82CA5D90F001AB219 /* Cars.swift */; };
 		C1ACF0BF2CA5DD01001AB219 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ACF0BE2CA5DD01001AB219 /* NetworkManager.swift */; };
-		C1ACF0C12CA5E1B5001AB219 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ACF0C02CA5E1B5001AB219 /* Keys.swift */; };
+		C1ACF0C32CA97428001AB219 /* ErrorMassages.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ACF0C22CA97428001AB219 /* ErrorMassages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +58,7 @@
 		C1ACF0702CA33064001AB219 /* FavoriteConroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteConroller.swift; sourceTree = "<group>"; };
 		C1ACF0B82CA5D90F001AB219 /* Cars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cars.swift; sourceTree = "<group>"; };
 		C1ACF0BE2CA5DD01001AB219 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		C1ACF0C02CA5E1B5001AB219 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		C1ACF0C22CA97428001AB219 /* ErrorMassages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMassages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,12 +110,12 @@
 			isa = PBXGroup;
 			children = (
 				C1ACF03C2CA32D4E001AB219 /* AppDelegate.swift */,
+				C1ACF0C22CA97428001AB219 /* ErrorMassages.swift */,
 				C1ACF03E2CA32D4E001AB219 /* SceneDelegate.swift */,
 				C1ACF0BE2CA5DD01001AB219 /* NetworkManager.swift */,
 				C1ACF0402CA32D4E001AB219 /* ViewController.swift */,
 				C1ACF0B82CA5D90F001AB219 /* Cars.swift */,
 				C1ACF06C2CA32E74001AB219 /* TabBarController.swift */,
-				C1ACF0C02CA5E1B5001AB219 /* Keys.swift */,
 				C1ACF06E2CA33044001AB219 /* HomeConroller.swift */,
 				C1ACF0702CA33064001AB219 /* FavoriteConroller.swift */,
 				C1ACF0452CA32D53001AB219 /* Assets.xcassets */,
@@ -274,12 +274,12 @@
 			files = (
 				C1ACF0BF2CA5DD01001AB219 /* NetworkManager.swift in Sources */,
 				C1ACF0412CA32D4E001AB219 /* ViewController.swift in Sources */,
+				C1ACF0C32CA97428001AB219 /* ErrorMassages.swift in Sources */,
 				C1ACF06D2CA32E74001AB219 /* TabBarController.swift in Sources */,
 				C1ACF0712CA33064001AB219 /* FavoriteConroller.swift in Sources */,
 				C1ACF03D2CA32D4E001AB219 /* AppDelegate.swift in Sources */,
 				C1ACF06F2CA33044001AB219 /* HomeConroller.swift in Sources */,
 				C1ACF03F2CA32D4E001AB219 /* SceneDelegate.swift in Sources */,
-				C1ACF0C12CA5E1B5001AB219 /* Keys.swift in Sources */,
 				C1ACF0B92CA5D910001AB219 /* Cars.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

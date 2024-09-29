@@ -14,39 +14,33 @@ final class NetworkManager {
     
     private init() {}
     
-    func getCars(page: Int, complition: @escaping ([Cars]?, String?) -> Void) {
+    func getCars(page: Int, complition: @escaping ([Cars]?, ErrorMassages?) -> Void) {
 
         guard let url = URL(string: baseUrl) else {
-            complition(nil, "Eror in url")
+            complition(nil, .invalidUrl)
             return
         }
         
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             
             if let _ = error {
-                complition(nil, "Error in start url session")
+                complition(nil, .unableToComplate)
                 return
             }
-            
-//            guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
-//                complition(nil, "Error in try cast response or response status")
-//                print("Response status code: \(response.statusCode)")
-//                return
-//            }
             
             if let httpResponse = response as? HTTPURLResponse {
                 print("Response status code: \(httpResponse.statusCode)")
                 guard httpResponse.statusCode == 200 else {
-                    complition(nil, "Error: Status code is not 200")
+                    complition(nil, .invalidResponse)
                     return
                 }
             } else {
-                complition(nil, "Error in casting response to HTTPURLResponse")
+                complition(nil, .invalidResponse)
                 return
             }
             
             guard let data = data else {
-                complition(nil, "Error in data")
+                complition(nil, .invalidData)
                 return
             }
             
@@ -56,7 +50,7 @@ final class NetworkManager {
                 let cars = try decoder.decode([Cars].self, from: data)
                 complition(cars, nil)
             } catch {
-                complition(nil, "Failed to decode JSON: \(error.localizedDescription)")
+                complition(nil, .failidDecode)
             }
         }
         
