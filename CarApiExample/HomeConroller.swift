@@ -9,7 +9,12 @@ import UIKit
 
 final class HomeConroller: UIViewController {
     
+    private enum Section {
+        case main
+    }
+    
     private var cars: [Cars] = []
+    private var dataSource: UICollectionViewDiffableDataSource<Section, Cars>!
     private lazy var collectionVeiw = UICollectionView()
     
     override func viewDidLoad() {
@@ -17,15 +22,20 @@ final class HomeConroller: UIViewController {
         
         self.view.backgroundColor = .red
         
+        getCars()
+        configureCollectionView()
+        configureDataSource()
+    }
+    
+    private func getCars() {
         NetworkManager.shared.getCars(page: 1) { (items, error) in
             guard let cars = items else {
                 print(error!.rawValue)
                 return
             }
-            print(cars.count)
-            print(cars)
+            self.cars = cars
+            self.updateData()
         }
-        configureCollectionView()
     }
     
     private func configureCollectionView() {
@@ -52,5 +62,23 @@ final class HomeConroller: UIViewController {
         flowLayout.itemSize = CGSize(width: itemWidth, height: itemWidth + 40)
         
         return flowLayout
+    }
+    
+    private func configureDataSource() {
+        dataSource = UICollectionViewDiffableDataSource<Section, Cars>(collectionView: collectionVeiw, cellProvider: { (collectionVeiw, IndexPath, car) -> UICollectionViewCell? in
+            let cell = collectionVeiw.dequeueReusableCell(withReuseIdentifier: CarCell.reuseId, for: IndexPath) as! CarCell
+            cell.set(car: car)
+            
+            return cell
+        })
+    }
+    
+    private func updateData() {
+        var snapshot = NSDiffableDataSourceSnapshot<Section, Cars>()
+        snapshot.appendSections([.main])
+        snapshot.appendItems(cars)
+        DispatchQueue.main.async {
+            self.dataSource.apply(snapshot, animatingDifferences: true)
+        }
     }
 }
