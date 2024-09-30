@@ -29,7 +29,6 @@ final class NetworkManager {
             }
             
             if let httpResponse = response as? HTTPURLResponse {
-                print("Response status code: \(httpResponse.statusCode)")
                 guard httpResponse.statusCode == 200 else {
                     complition(nil, .invalidResponse)
                     return
@@ -46,7 +45,7 @@ final class NetworkManager {
             
             do {
                 let decoder = JSONDecoder()
-                print(String(data: data, encoding: .utf8) ?? "No data")
+                //print(String(data: data, encoding: .utf8) ?? "No data")
                 let cars = try decoder.decode([Cars].self, from: data)
                 complition(cars, nil)
             } catch {

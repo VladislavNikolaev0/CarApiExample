@@ -28,7 +28,9 @@ final class HomeConroller: UIViewController {
     }
     
     private func getCars() {
-        NetworkManager.shared.getCars(page: 1) { (items, error) in
+        NetworkManager.shared.getCars(page: 1) { [weak self] (items, error) in
+            guard let self = self else { return }
+            
             guard let cars = items else {
                 print(error!.rawValue)
                 return
@@ -41,7 +43,7 @@ final class HomeConroller: UIViewController {
     private func configureCollectionView() {
         collectionVeiw = UICollectionView(frame: view.bounds, collectionViewLayout: getCollectionFlowLayout())
         view.addSubview(collectionVeiw)
-        collectionVeiw.backgroundColor = .cyan
+        collectionVeiw.backgroundColor = .systemBackground
         collectionVeiw.register(CarCell.self, forCellWithReuseIdentifier: "carID")
     }
     

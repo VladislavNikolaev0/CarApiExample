@@ -29,6 +29,28 @@ final class CAImageView: UIImageView {
         icon = UIImage(named: imageName)
     }
     
+    func downLoadImage(urlString: String) {
+        guard let url = URL(string: urlString) else { return }
+        
+        let task = URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
+            guard let self = self else { return }
+            
+            if error != nil { print("error"); return }
+            if let httpResponse = response as? HTTPURLResponse {
+                guard httpResponse.statusCode == 200 else { print("response"); return }
+            } else { return }
+            guard let data = data else { print("data"); return }
+            
+            guard let image = UIImage(data: data) else { print("image"); return }
+            
+            DispatchQueue.main.async {
+                self.image = image
+            }
+        }
+        
+        task.resume()
+    }
+    
     //MARK: - configure
     
     private func configure() {
@@ -37,6 +59,5 @@ final class CAImageView: UIImageView {
         clipsToBounds = true
         translatesAutoresizingMaskIntoConstraints = false
     }
-    
     
 }

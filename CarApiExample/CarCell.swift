@@ -28,6 +28,7 @@ final class CarCell: UICollectionViewCell {
     func set(car: Cars) {
         mark.setText(text: car.make)
         model.setText(text: car.model)
+        image.downLoadImage(urlString: car.image)
     }
     
     private func configure() {
