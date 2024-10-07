@@ -27,6 +27,7 @@ final class HomeConroller: UIViewController {
         configureCollectionView()
         configureSerchController()
         configureDataSource()
+        print(cars)
     }
     
     private func getCars() {
@@ -37,6 +38,7 @@ final class HomeConroller: UIViewController {
                 print(error!.rawValue)
                 return
             }
+            
             self.cars = cars
             self.updateData(cars: self.cars)
         }
@@ -99,7 +101,9 @@ final class HomeConroller: UIViewController {
 extension HomeConroller: UICollectionViewDelegate {
     
     internal func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        let infoVC = InfoController()
+        infoVC.car = cars[indexPath.item]
+        navigationController?.pushViewController(infoVC, animated: true)
     }
 }
 

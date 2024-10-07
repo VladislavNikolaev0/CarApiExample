@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Cars: Codable, Hashable {
+struct Cars: Codable, Hashable, Loopable {
     var id: Int
     var make: String
     var model: String
@@ -23,3 +23,4 @@ struct Cars: Codable, Hashable {
     var owners: Int
     var image: String
 }
+
