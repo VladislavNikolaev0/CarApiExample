@@ -89,12 +89,13 @@ final class HomeConroller: UIViewController {
     private func configureSerchController() {
         let serchCV = UISearchController()
         serchCV.searchResultsUpdater = self
+        serchCV.searchBar.delegate = self
         serchCV.searchBar.placeholder = "Serch mark a vichle"
         navigationItem.searchController = serchCV
     }
 }
 
-extension HomeConroller: UISearchResultsUpdating {
+extension HomeConroller: UISearchResultsUpdating, UISearchBarDelegate {
     func updateSearchResults(for searchController: UISearchController) {
         guard let filter = searchController.searchBar.text, !filter.isEmpty else { return }
         
@@ -105,6 +106,13 @@ extension HomeConroller: UISearchResultsUpdating {
         
         updateData(cars: filterdCars)
     }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        print("cancel")
+        updateData(cars: cars)
+    }
+    
+    
 }
 
 
