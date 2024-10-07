@@ -44,6 +44,7 @@ final class HomeConroller: UIViewController {
     
     private func configureCollectionView() {
         collectionVeiw = UICollectionView(frame: view.bounds, collectionViewLayout: getCollectionFlowLayout())
+        collectionVeiw.delegate = self
         view.addSubview(collectionVeiw)
         collectionVeiw.backgroundColor = .systemBackground
         collectionVeiw.register(CarCell.self, forCellWithReuseIdentifier: "carID")
@@ -95,8 +96,15 @@ final class HomeConroller: UIViewController {
     }
 }
 
+extension HomeConroller: UICollectionViewDelegate {
+    
+    internal func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+    }
+}
+
 extension HomeConroller: UISearchResultsUpdating, UISearchBarDelegate {
-    func updateSearchResults(for searchController: UISearchController) {
+    internal func updateSearchResults(for searchController: UISearchController) {
         guard let filter = searchController.searchBar.text, !filter.isEmpty else { return }
         
         filterdCars = cars.filter {
@@ -107,7 +115,7 @@ extension HomeConroller: UISearchResultsUpdating, UISearchBarDelegate {
         updateData(cars: filterdCars)
     }
     
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+    internal func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         print("cancel")
         updateData(cars: cars)
     }

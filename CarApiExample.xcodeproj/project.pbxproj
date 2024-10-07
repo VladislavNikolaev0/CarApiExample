@@ -24,6 +24,7 @@
 		C1ACF0C52CA98B1A001AB219 /* CarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ACF0C42CA98B1A001AB219 /* CarCell.swift */; };
 		C1ACF0C72CA98B7A001AB219 /* CALable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ACF0C62CA98B7A001AB219 /* CALable.swift */; };
 		C1ACF0C92CA99038001AB219 /* CAImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ACF0C82CA99038001AB219 /* CAImageView.swift */; };
+		C1C264E82CB4471C00D3D0A2 /* InfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C264E72CB4470C00D3D0A2 /* InfoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		C1ACF0C42CA98B1A001AB219 /* CarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCell.swift; sourceTree = "<group>"; };
 		C1ACF0C62CA98B7A001AB219 /* CALable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALable.swift; sourceTree = "<group>"; };
 		C1ACF0C82CA99038001AB219 /* CAImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAImageView.swift; sourceTree = "<group>"; };
+		C1C264E72CB4470C00D3D0A2 /* InfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				C1ACF0C62CA98B7A001AB219 /* CALable.swift */,
 				C1ACF0C82CA99038001AB219 /* CAImageView.swift */,
 				C1ACF06E2CA33044001AB219 /* HomeConroller.swift */,
+				C1C264E72CB4470C00D3D0A2 /* InfoController.swift */,
 				C1ACF0702CA33064001AB219 /* FavoriteConroller.swift */,
 				C1ACF0452CA32D53001AB219 /* Assets.xcassets */,
 				C1ACF0472CA32D53001AB219 /* LaunchScreen.storyboard */,
@@ -282,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1ACF0BF2CA5DD01001AB219 /* NetworkManager.swift in Sources */,
+				C1C264E82CB4471C00D3D0A2 /* InfoController.swift in Sources */,
 				C1ACF0412CA32D4E001AB219 /* ViewController.swift in Sources */,
 				C1ACF0C32CA97428001AB219 /* ErrorMassages.swift in Sources */,
 				C1ACF06D2CA32E74001AB219 /* TabBarController.swift in Sources */,
