@@ -14,6 +14,7 @@ final class HomeConroller: UIViewController {
     }
     
     private var cars: [Cars] = []
+    private var filterdCars: [Cars] = []
     private var dataSource: UICollectionViewDiffableDataSource<Section, Cars>!
     private lazy var collectionVeiw = UICollectionView()
     
@@ -24,6 +25,7 @@ final class HomeConroller: UIViewController {
         
         getCars()
         configureCollectionView()
+        configureSerchController()
         configureDataSource()
     }
     
@@ -36,7 +38,7 @@ final class HomeConroller: UIViewController {
                 return
             }
             self.cars = cars
-            self.updateData()
+            self.updateData(cars: self.cars)
         }
     }
     
@@ -75,7 +77,7 @@ final class HomeConroller: UIViewController {
         })
     }
     
-    private func updateData() {
+    private func updateData(cars: [Cars]) {
         var snapshot = NSDiffableDataSourceSnapshot<Section, Cars>()
         snapshot.appendSections([.main])
         snapshot.appendItems(cars)
@@ -83,4 +85,26 @@ final class HomeConroller: UIViewController {
             self.dataSource.apply(snapshot, animatingDifferences: true)
         }
     }
+    
+    private func configureSerchController() {
+        let serchCV = UISearchController()
+        serchCV.searchResultsUpdater = self
+        serchCV.searchBar.placeholder = "Serch mark a vichle"
+        navigationItem.searchController = serchCV
+    }
 }
+
+extension HomeConroller: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let filter = searchController.searchBar.text, !filter.isEmpty else { return }
+        
+        filterdCars = cars.filter {
+            $0.make.lowercased().contains(filter.lowercased()) ||
+            $0.model.lowercased().contains(filter.lowercased())
+        }
+        
+        updateData(cars: filterdCars)
+    }
+}
+
+
