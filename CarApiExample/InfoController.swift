@@ -32,6 +32,7 @@ final class InfoController: UIViewController {
         return stack
     }()
     
+    private lazy var favButton = CAFavoriteButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
