@@ -31,13 +31,20 @@ final class CAFavoriteButton: UIView {
     
     private func configure() {
         backgroundColor = .systemBackground
-        layer.cornerRadius = bounds.width / 2
+        layer.cornerRadius = 30
+        translatesAutoresizingMaskIntoConstraints = false
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOpacity = 0.3
+        layer.shadowRadius = 10
+        layer.masksToBounds = false
         
         addSubview(hearImage)
         
         NSLayoutConstraint.activate([
-            hearImage.centerXAnchor.constraint(equalTo: centerXAnchor),
-            hearImage.centerYAnchor.constraint(equalTo: centerYAnchor),
+            hearImage.topAnchor.constraint(equalTo: topAnchor, constant: 13),
+            hearImage.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
+            hearImage.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
+            hearImage.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -13),
         ])
         
         let gesture = UITapGestureRecognizer(target: self, action: #selector(didTap))
@@ -46,8 +53,10 @@ final class CAFavoriteButton: UIView {
     }
     
     @objc private func didTap() {
-        isFavorite.toggle()
-        hearImage.image = isFavorite ? UIImage(systemName: "heart.fill") : UIImage(systemName: "heart")
-        hearImage.tintColor = isFavorite ? .systemRed : .gray
+        UIView.animate(withDuration: 0.3) {
+            self.isFavorite.toggle()
+            self.hearImage.image = self.isFavorite ? UIImage(systemName: "heart.fill") : UIImage(systemName: "heart")
+            self.hearImage.tintColor = self.isFavorite ? .systemRed : .gray
+        }
     }
 }

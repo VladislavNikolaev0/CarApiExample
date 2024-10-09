@@ -31,8 +31,10 @@ final class NetworkManager {
             if let httpResponse = response as? HTTPURLResponse {
                 guard httpResponse.statusCode == 200 else {
                     complition(nil, .invalidResponse)
+                   
                     return
                 }
+                print("Response status code: \(httpResponse.statusCode)")
             } else {
                 complition(nil, .invalidResponse)
                 return
